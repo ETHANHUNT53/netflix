@@ -1,0 +1,61 @@
+.banner{
+    height: 600px;
+    
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: black;
+        opacity: 0.4;
+    }
+}
+
+
+
+.row{
+    padding: 1rem;
+    background-color: black;
+    >div{
+        display: flex;
+        // justify-content: center;
+        overflow-x:auto ;
+    }
+    >h2{
+        color: white;
+        font-weight: 400;
+        margin: .5rem;
+        letter-spacing: 0.05ch;
+    }
+}
+
+.card{
+    width: 200px;
+    cursor: pointer;
+    
+    padding: .2rem;
+    padding-top: 1.3rem;
+    transition: transform 0.5s;
+    &:hover{
+        transform: translateY(-10px) scale(1.05);
+    }
+}
+
+.genreBox{
+    overflow-x: auto;
+    display: flex;
+    height: 200px;
+    background-color: black;
+
+    >a{
+        color: black;
+        background-color: white;
+        padding: 1rem;
+        margin: 1rem;
+
+    }
+}
